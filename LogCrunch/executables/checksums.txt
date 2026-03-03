@@ -1,0 +1,2 @@
+d48208ac3b9bbf3f9ab99cfb170deb9e393347cfdaebda3886f47bf8d7f4e83b  LogCrunch_agent_v0.11.1_linux_amd64.tar.gz
+4a1a261241c65033e8362e97b463abadcae1c0237cfeabc5474db56f9d1da8ff  LogCrunch_server_v0.11.1_linux_amd64.tar.gz

@@ -1,0 +1,14 @@
+$userFile = “path to username list”
+$fileUsers = Get-Content $userFile | ForEach-Object { $_.Trim() }
+$users = Get-ADUser -Filter * -Properties SamAccountName
+
+Foreach ($user in $users) {
+	if(-not($fileUsers -contains $user.SamAccountName)) {
+		# Disable and Sign out bad user:
+		Disable-ADAccount -Identity $user.SamAccountName
+$computer = “COMPUTER NAME”
+Quser /server:$computer | Where-Object { $_ -match $user.SamAccountName }
+		$wshell = New-Object -ComObject WScript.Shell
+$wshell.Popup(“unauthorized user disabled: $($user.SamAccountName)”, 0)
+	}
+}

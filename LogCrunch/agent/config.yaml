@@ -1,0 +1,7 @@
+---
+Targets:
+Services:
+  - name: JournalDemo
+    key: journal-demo
+    severity: low
+...

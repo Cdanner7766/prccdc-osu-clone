@@ -1,0 +1,8 @@
+Requires makeself to be installed to the build machine. Install with distro
+package manager on build system or download from internet.
+
+build with ./build.sh
+
+usage example: ./prog.run php /var/www/html
+GIVE ABSOLUTE PATHS OR IT WILL NOT WORK
+
